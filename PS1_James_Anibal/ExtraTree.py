@@ -20,8 +20,6 @@ data = data.T
 test_data = X_test.T.iloc[1:len(X_test)].values
 test_data = test_data.T
 
-### OneVsRest classifier - one classifier per class,
-### fits one class against all other classes
 
 
 X = data.values
@@ -38,7 +36,7 @@ overall_perf = np.mean(results)
 
 over_all_std = np.std(results)
 
-\
+
 final_predictions = clf.predict(X_test)
 
 pickle.dump(clf,open("ExtraTreesModel.pkl","wb"))
