@@ -1,2 +1,2 @@
 # EECS453_spring_2019
-Repository for EECS453
+code for project 1 from EECS453
